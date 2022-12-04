@@ -912,3 +912,32 @@ button{
         width: auto;
     }
 }
+
+/* Footer */
+.page__inner_dark-2{
+    background-color: #313030;
+}
+
+.footer{
+    max-width: 1249px;
+    min-height: 111px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copyright{
+    margin: 0;
+    color: #b8b8b8;
+}
+
+.social{
+    display: flex;
+    gap: 18px;
+}
+
+/* JS */
+.hide {
+    display: none;
+}
