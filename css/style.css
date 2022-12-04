@@ -27,7 +27,7 @@ button{
 }
 
 .page__inner_grey{
-    background-color: #ffffff;
+    background-color: #f6f2f2;
 }
 
 .page__inner_dark{
@@ -38,8 +38,8 @@ button{
     max-width:100%;
     padding: 0 1vw;
     padding-top: 102px;
-    padding-bottom: 110px;
-    width: 1200px;   
+    padding-bottom: 110px; 
+    max-width: 1200px;  
 }
 
 .page__header{
@@ -116,6 +116,73 @@ button{
 
 @media screen and (max-width:800px) {
     .site-menu{
+        display: none;
+    }
+}
+
+/* Popup menu */
+.popup-menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.popup-menu__button{
+    display: block;
+    width: 300px;
+    height: 80px;
+    background-image: url('../img/menu_icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.popup-menu__list{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-65%, 100%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
+}
+
+.popup-menu__item{
+    display: flex;
+    min-height: 89px;
+}
+
+.popup-menu__link{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 24px;
+    font-weight:700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #E0E0E0;
+}
+
+.popup-menu__link:hover{
+    background-color: #FF3F40;
+}
+
+.popup-menu__link_active{
+    background-color: #FF3F40;
+}
+
+@media screen and (min-width:800px) {
+    .popup-menu{
         display: none;
     }
 }
@@ -433,7 +500,7 @@ button{
 .feature__products{
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 20px;
 }
 
 .feature__product{
@@ -919,7 +986,7 @@ button{
 }
 
 .footer{
-    max-width: 1249px;
+    max-width: 1200px;
     min-height: 111px;
     margin: 0 auto;
     display: flex;
@@ -941,3 +1008,6 @@ button{
 .hide {
     display: none;
 }
+
+
+
