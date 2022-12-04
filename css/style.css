@@ -38,7 +38,8 @@ button{
     max-width:100%;
     padding: 0 1vw;
     padding-top: 102px;
-    padding-bottom: 110px;    
+    padding-bottom: 110px;
+    width: 1200px;   
 }
 
 .page__header{
@@ -116,6 +117,115 @@ button{
 @media screen and (max-width:800px) {
     .site-menu{
         display: none;
+    }
+}
+
+/* Main */
+/* Intro */
+
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1249px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+@media screen and (min-width:800px) and (max-width:1240px) {
+    .intro{
+        flex-wrap: nowrap;
+    }
+}
+
+.intro__info{
+    max-width: 595px;
+}
+
+@media screen and (max-width:1240px) {
+    .intro__info{
+        width:50%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .intro__info{
+        width:100%;
+    }
+}
+
+.intro__heading{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 800;
+    font-variation-settings: "wght" 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 37px;
+    margin-top: -15px;
+}
+
+.intro__span_special{
+    letter-spacing: 6px;
+    overflow-wrap: break-word;
+    hyphens: auto;    
+}
+
+.intro__text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 58px;
+}
+
+.action-link{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:227px;
+    padding: 0.5em 1em;
+    min-height: 55px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34px;
+    border-radius: 5px;
+    text-decoration: none;    
+}
+
+.action-link_red-full{
+    color: #fff;
+    background-color: #ff2d2d;
+}
+
+.action-link_red-transp{
+    color: #ff2d2d;
+    background-color: rgba(0,0,0,0.0001);
+    border: 2px solid #ff2d2d;
+}
+
+.intro__video{
+    width:551px;
+    height: 356px;
+    object-fit: cover; 
+    box-shadow: -2.2px -13.8px 73px rgba(0,0,0,0.29);
+}
+
+@media screen and (max-width:1240px) {
+    .intro__video{
+        width:50%;
+        margin-right: initial;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .intro__video{
+        width:100%;
+        margin-bottom: 80px;
     }
 }
 
