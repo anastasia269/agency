@@ -27,7 +27,7 @@ button{
 }
 
 .page__inner_grey{
-    background-color: #f6f2f2;
+    background-color: #ffffff;
 }
 
 .page__inner_dark{
@@ -228,4 +228,119 @@ button{
         margin-bottom: 80px;
     }
 }
+
+/* Services */
+.services{
+    display: flex;
+    max-width: 1249px;
+    margin: 0 auto;
+    padding: 0 1vw;
+    padding-top: 107px;
+    padding-bottom: 90px; 
+    border-bottom: 2px solid #ececec;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+    .services {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+}
+
+.services__info{
+    max-width: 539px;
+    margin-bottom: 35px;
+    margin-right: 35px;
+}
+
+.services__heading{
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 0.422159px;
+    text-transform: uppercase;
+}
+
+.services__about{
+    margin: 0;
+    margin-bottom: 64px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.services__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 13px;
+    width: 610px;
+}
+
+.services__item{
+    width: 285px;
+    margin-bottom: 53px;
+}
+
+.services__item_icon_mang::before{
+    content: '';
+    display: block;
+    width: 41px;
+    height: 41px;
+    background-image: url('../img/1.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 33px;
+}
+
+.services__item_icon_design::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/2.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 33px;
+}
+
+.services__item_icon_logo::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url('..//img/3.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 33px;
+}
+
+.services__item_icon_anim::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/4.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 33px;
+}
+
+.services__title{
+    margin: 0;
+    margin-bottom: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24.0692px;
+    font-weight: 600;
+    line-height: 0px;
+}
+
+.services__text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+}
+
 
