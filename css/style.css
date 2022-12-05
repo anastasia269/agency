@@ -107,11 +107,11 @@ button{
 }
 
 .site-menu__link:hover{
-    background-color: #FF3F40;
+    background-color: #000000;
 }
 
 .site-menu__link_active{
-    background-color: #FF3F40;
+    background-color: #2c2c2c;
 }
 
 @media screen and (max-width:800px) {
